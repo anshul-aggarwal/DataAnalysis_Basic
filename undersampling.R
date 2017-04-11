@@ -21,7 +21,7 @@ for (j in 1:length(levels(x))){
   }
   rt = ctr/l
   if (rt > 0){
-    info = info + (-rt*log10(rt))
+    info = info + (-rt*log2(rt))
   }
 }
 
@@ -45,7 +45,7 @@ for(k in 1:length(levels(y))){
     rt = ctr/lctr
     print(rt)
     if (rt > 0){
-      infol = infol + (-rt*log10(rt))
+      infol = infol + (-rt*log2(rt))
     }
   }
   infoA = infoA + lctr*infol/l
